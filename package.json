@@ -1,0 +1,34 @@
+{
+  "name": "tower-defense",
+  "version": "0.0.0",
+  "description": "tower-defense",
+  "main": "index.js",
+  "scripts": {
+    "dev": "DEBUG=1 webpack --watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "tslint -c tslint.json 'src/**/*.ts'"
+  },
+  "author": "frux <qdinov@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "awesome-typescript-loader": "^3.2.3",
+    "tslint": "^5.7.0",
+    "typescript": "^2.5.2",
+    "webpack": "^3.5.5"
+  },
+  "dependencies": {
+    "awesome-typescript-loader": "^3.2.3",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "tslint": "^5.7.0",
+    "typescript": "^2.5.2",
+    "webpack": "^3.5.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:frux/td.git"
+  },
+  "homepage": "https://github.com/frux/td"
+}
