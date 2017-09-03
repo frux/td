@@ -1,10 +1,15 @@
 import {log} from './debug';
 import SceneObject, {ISceneObjectParams} from './sceneObject';
 
+export interface IObjectManagerParams extends ISceneObjectParams {
+	id: string
+}
+
 export default class ObjectManager extends SceneObject {
 	protected objects: Set<SceneObject>;
+	protected params: IObjectManagerParams;
 
-	constructor(params: ISceneObjectParams) {
+	constructor(params: IObjectManagerParams) {
 		super(params);
 
 		this.objects = new Set();

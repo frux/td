@@ -12,3 +12,10 @@ export function getMountNode(): HTMLElement | null {
 export function mount(el: HTMLElement, mountNode: HTMLElement): void {
 	mountNode.appendChild(el);
 }
+
+export function getViewportSize(): {width: number, height: number} {
+	return {
+		width: window.innerWidth,
+		height: window.innerHeight
+	};
+}
