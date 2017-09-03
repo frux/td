@@ -6,8 +6,8 @@ export interface IObjectManagerParams extends ISceneObjectParams {
 }
 
 export default class ObjectManager extends SceneObject {
-	protected objects: Set<SceneObject>;
 	protected params: IObjectManagerParams;
+	protected objects: Set<SceneObject>;
 
 	constructor(params: IObjectManagerParams) {
 		super(params);

@@ -1,4 +1,5 @@
 import {log} from './libs/debug';
+import Game from './libs/game';
 import Scene from './libs/scene';
 import SceneObject from './libs/sceneObject';
 
@@ -18,4 +19,8 @@ const someObject = new FooBar({id: 'foo-bar'});
 
 mainScene.addObject(someObject);
 
-mainScene.render();
+const game = new Game();
+
+game.addScene(mainScene);
+
+game.start();
